@@ -31,6 +31,11 @@ app.use("/api/v1/auth", authRoute);
 app.use("/api/v1/upload", fileUploadRoute);
 
 
+app.get("/", (req, res)=>{
+    res.send("welcome to Ins Technology")
+})
+
+
 app.listen(port, ()=>{
     console.log(`Server is running on port no : ${port}`)
 })
